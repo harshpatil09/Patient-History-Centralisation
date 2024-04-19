@@ -1,0 +1,109 @@
+/*label{
+    width: 130px;
+    display: inline-block;
+}*/
+body
+{
+    padding-bottom: 90px;
+    padding-top: 50px;
+    background-image: url('p_images/bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 2400px 1150px;
+}
+
+h2{
+    text-decoration: underline;
+    padding-left: 20px;
+}
+
+:root{
+    --heading : rgb(0 10 45);
+    --para : #777;
+    --para-tint : #e4e4e4;
+    --white : #fff;
+    --helper : #8490ff;
+    --helper-tint : #f3f4ff;
+    --bg : rgb(200 200 200);
+    --icon-bg : rgb(144, 172, 209, 0.2);
+    --gradient : linear-gradient(0deg, rgb(132 144 255)0%, rgb(98 189 252)100%);
+    --gradient-support : -webkit-linear-gradient(0deg, rgb(132 144 255)0%, rgb(98 189 252)100%);
+    --shadow : 0px 0px 20px 0px rgb(132 144 255 / 20%);
+    --shadowSupport : 0px 20px 20px 0px rgb(0 0 0 / 20%);
+}
+
+
+.container{
+    max-width: 450px;
+    margin:0 auto;
+    padding: 100px;
+    background-color: rgba(255, 255, 255, 0.3);
+    /*    background-color: #f2f2f2; */
+    box-shadow: rgba(167, 167, 167, 0.2) 0px 7px 29px 0px;
+    border: 1px solid black;
+    border-radius: 5px; 
+}
+
+.form-group
+{
+    margin-bottom: 30px;
+   
+}
+.main_heading{
+    text-align: center;
+}
+
+input[type="text"],
+input[type="contact"],
+input[type="number"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+/*input[type="file"],*/
+
+select,
+textarea{
+    width: 80%;
+    padding: 12px;
+    border-radius: 25px;
+    margin: 15px;
+    height: 30px;
+}
+
+label{
+    padding-left: 17px;
+    font-size: 16px;
+    font-weight: 600;
+    width: 800px;
+/*    text-align: right;*/
+}
+
+.btn{
+    background: var(--gradient-support);
+    padding: 10px 15px;
+    color: var(--helper-tint);
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.btn:hover,.btn:active{
+    box-shadow: var(--shadowSupport);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.buttons-bottom{
+    display: flex;
+    gap: 180px;
+}
+
+.star{
+    color: red;
+    margin-left: 0;
+}
